@@ -5,7 +5,7 @@ import useTranslation from '@/hooks/useTranslation';
 import translation from '@/constants/translation';
 import Link from 'next/link';
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
