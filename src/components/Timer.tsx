@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
+import useTranslation from '@/hooks/useTranslation';
 
 export default function Timer() {
-  const [remainTime, setRemainTime] = useState<number>(null);
+  const i18n = useTranslation();
+  const [remainTime, setRemainTime] = useState<number>(0);
 
   useEffect(() => {
     setInterval(() => {
-      setRemainTime(new Date('2023-08-19 00:00:00') - new Date());
+      setRemainTime(new Date('2023-08-19 00:00:00').getTime() - new Date().getTime());
     }, 50)
   }, [])
 
@@ -22,10 +24,10 @@ export default function Timer() {
         <div>{hour}</div>
         <div>{minute}</div>
         <div>{second}.{microsecond}</div>
-        <div>Days</div>
-        <div>Hours</div>
-        <div>Minutes</div>
-        <div>Seconds</div>
+        <div>{i18n.unit.day}</div>
+        <div>{i18n.unit.hour}</div>
+        <div>{i18n.unit.minute}</div>
+        <div>{i18n.unit.second}</div>
       </div>
     </div>
   );

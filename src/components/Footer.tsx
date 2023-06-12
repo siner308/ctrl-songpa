@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className={'bg-gray-300 flex justify-between'}>
       <div>{i18n.ingress.anomaly.location}</div>
-      <div>19 August 2023</div>
+      <div>{i18n.ingress.anomaly.date}</div>
     </div>
   );
 };
