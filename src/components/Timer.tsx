@@ -8,7 +8,7 @@ export default function Timer() {
   useEffect(() => {
     setInterval(() => {
       setRemainTime(new Date('2023-08-19 00:00:00').getTime() - new Date().getTime());
-    }, 50)
+    }, 10)
   }, [])
 
 
@@ -16,7 +16,7 @@ export default function Timer() {
   const hour = Math.floor((remainTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
   const minute = Math.floor((remainTime % (1000 * 60 * 60)) / (1000 * 60))
   const second = Math.floor((remainTime % (1000 * 60)) / 1000)
-  const microsecond = Math.floor(remainTime % 1000)
+  const microsecond = Math.floor((remainTime % 1000) / 10)
   return (
     <div>
       <div className={'grid grid-cols-4 text-center text-2xl p-20'}>

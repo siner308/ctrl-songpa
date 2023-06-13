@@ -1,7 +1,6 @@
 const translation = {
     en: {
-        title: 'Ctrl Seoul',
-        description: 'This is a description',
+        title: 'Ctrl Songpa',
         language: 'English',
         ingress: {
             anomaly: {
@@ -17,8 +16,7 @@ const translation = {
         }
     },
     kr: {
-        title: 'Ctrl Seoul',
-        description: '이것은 설명입니다',
+        title: 'Ctrl Songpa',
         language: '한국어',
         ingress: {
             anomaly: {
