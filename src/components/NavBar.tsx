@@ -1,13 +1,14 @@
 import useTranslation from '@/hooks/useTranslation';
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
 import NavBarButtonGroup from '@/components/NavBarButtonGroup';
 
 export default function NavBar() {
   const i18n = useTranslation();
   const [open, setOpen] = useState(false);
-  const toggle = (event: React.MouseEvent) => {
-    const targetTagName = event.currentTarget.tagName.toLowerCase();
-    if (open && (targetTagName !== 'div')) return;
+  const toggle = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const target = event.target as HTMLButtonElement;
+    const targetTagName = target.tagName.toLowerCase();
+    if (open && (targetTagName !== 'nav')) return;
     setOpen(!open);
   }
 
@@ -24,12 +25,12 @@ export default function NavBar() {
           <NavBarButtonGroup />
         </div>
         <div id={'mobile'} className={`mobile:block hidden`}>
-          {open ? <div
+          {open ? <nav
             className={'flex fixed left-0 right-0 top-0 bottom-0 h-full w-full bg-gray-100 bg-opacity-50'}
             onClick={toggle}
           >
             <NavBarButtonGroup />
-          </div> : null}
+          </nav> : null}
         </div>
       </div>
     </div>
