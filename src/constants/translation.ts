@@ -6,7 +6,7 @@ const translation = {
             anomaly: {
                 location: 'Songpa, Seoul, South Korea',
                 date: '19 August 2023 (Sat)',
-            }
+            },
         },
         unit: {
             day: 'days',
