@@ -24,10 +24,10 @@ export default function Timer() {
         <div>{hour}</div>
         <div>{minute}</div>
         <div>{second}.{microsecond}</div>
-        <div>{i18n.unit.day}</div>
-        <div>{i18n.unit.hour}</div>
-        <div>{i18n.unit.minute}</div>
-        <div>{i18n.unit.second}</div>
+        <div className={'mobile:text-sm'}>{i18n.unit.day}</div>
+        <div className={'mobile:text-sm'}>{i18n.unit.hour}</div>
+        <div className={'mobile:text-sm'}>{i18n.unit.minute}</div>
+        <div className={'mobile:text-sm'}>{i18n.unit.second}</div>
       </div>
     </div>
   );
