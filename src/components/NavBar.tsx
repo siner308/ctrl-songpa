@@ -1,12 +1,12 @@
 import useTranslation from '@/hooks/useTranslation';
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import NavBarButtonGroup from '@/components/NavBarButtonGroup';
 
 export default function NavBar() {
   const i18n = useTranslation();
   const [open, setOpen] = useState(false);
-  const toggle = (e) => {
-    const targetTagName = e.target.tagName.toLowerCase();
+  const toggle = (event: React.MouseEvent) => {
+    const targetTagName = event.currentTarget.tagName.toLowerCase();
     if (open && (targetTagName !== 'div')) return;
     setOpen(!open);
   }
