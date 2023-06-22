@@ -7,6 +7,7 @@ type Props = {
   pageProps: any;
 }
 
+
 export default function App({ Component, pageProps }: Props) {
   return (
     <RootLayout>
