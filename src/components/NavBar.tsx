@@ -14,7 +14,10 @@ export default function NavBar() {
 
   return (
     <div className={'bg-blue-500 flex justify-between p-2'}>
-      <span className={'self-center text-white text-3xl'}>{i18n.title}</span>
+      <div className={'flex'}>
+        <img alt={'icon'} className={'h-10 mr-2'} src={'/icon.jpeg'}/>
+        <span className={'self-center text-white text-2xl'}>{i18n.title}</span>
+      </div>
       <div className={'flex mobile:flex-col self-center'}>
         <button className={'mobile:block hidden'} onClick={toggle}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

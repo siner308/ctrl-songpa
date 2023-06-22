@@ -3,25 +3,29 @@ import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
 import useLocale from '@/hooks/useLocale';
-
+import { Noto_Sans_KR } from '@next/font/google';
 
 type Props = {
   children: React.ReactNode;
 }
 
+const notoSansKr = Noto_Sans_KR({
+  subsets: [ 'latin' ],
+  weight: [ '400', '700' ],
+});
 export default function RootLayout({ children }: Props) {
   const locale = useLocale();
   return (
     <main
       style={{ height: '100vh' }}
-      className={'flex-col justify-between flex'}
+      className={`flex-col justify-between flex ${notoSansKr.className}`}
     >
       <Head>
         <title>Ctrl Songpa</title>
-        <meta property="og:description" content="19 August 2023 (Sat) Songpa, Seoul, South Korea" />
-        <meta property="og:url" content={`https://ctrl-songpa.vercel.app/${locale}`} />
-        <meta property="og:title" content="Ctrl Songpa" />
-        <meta property='og:image' content='https://ctrl-songpa.vercel.app/irk.webp' />
+        <meta property="og:description" content="19 August 2023 (Sat) Songpa, Seoul, South Korea"/>
+        <meta property="og:url" content={`https://ctrl-songpa.vercel.app/${locale}`}/>
+        <meta property="og:title" content="Ctrl Songpa"/>
+        <meta property="og:image" content="https://ctrl-songpa.vercel.app/logo.jpeg"/>
       </Head>
       <NavBar/>
       <div className={'flex-1'}>
