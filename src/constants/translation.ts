@@ -9,10 +9,7 @@ const translation = {
       },
     },
     location: {
-      introduce: 'Songpa was at the center of 1988 Seoul Olympics,\n' +
-        'and most of the sports facilities associated with that event are located within the district. \n' +
-        'In August 2023, an exciting battle will take place here.\n' +
-        'Resistance agents in Korea, Asia, and over the world, we need YOU!\n' +
+      introduce: 'Resistance agents in Korea, Asia, and over the world, we need YOU!\n' +
         'Join us!',
       shortName: 'Songpa',
       name: 'Songpa, Seoul, South Korea',
@@ -35,10 +32,7 @@ const translation = {
       },
     },
     location: {
-      introduce: '송파는 1988년 서울올림픽의 중심지였으며,\n' +
-        '올림픽과 관련된 대부분의 체육시설이 구내에 위치해 있습니다.\n' +
-        '2023년 8월, 이곳에서 흥미진진한 전투가 벌어집니다.\n' +
-        '한국, 아시아, 전 세계의 레지스탕스 요원 여러분, 여러분이 필요합니다!\n' +
+      introduce: '한국, 아시아, 전 세계의 레지스탕스 요원 여러분, 여러분이 필요합니다!\n' +
         '저희와 함께하세요!',
       shortName: '송파',
       name: '서울 송파구',
