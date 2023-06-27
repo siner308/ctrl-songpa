@@ -16,8 +16,8 @@ export default function Index() {
           fill
         />
       </div>
-      <div className={"relative px-4 pb-20 overflow-hidden"}>
-        <div className="z-[-2] h-full top-0 left-0 w-[100vw] absolute bg-[url('/background.jpeg')] object-cover bg-center opacity-[15%]" />
+      <div className="relative h-full px-4 pb-20 overflow-x-hidden">
+        <div className="z-[-1] h-full w-[100vw] top-0 left-0 absolute bg-[url('/background.jpeg')] bg-cover bg-center opacity-[15%]" />
         <Timer />
         <div className="flex flex-col gap-2">
           <div className={"flex mx-auto text-xl text-[#4ba5f5]"}>
