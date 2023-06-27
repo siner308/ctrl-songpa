@@ -12,7 +12,7 @@ export default function LocaleButton() {
       inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm
       font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50
       "
-      href={`/${locale === 'kr' ? '/en' : '/kr'}`}
+      href={`${locale === 'kr' ? '/en' : '/kr'}`}
     >
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
            className="w-6 h-6">

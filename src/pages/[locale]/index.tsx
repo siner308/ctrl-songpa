@@ -1,6 +1,5 @@
 import Timer from '@/components/Timer';
 import useTranslation from '@/hooks/useTranslation';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function Index() {
@@ -10,10 +9,11 @@ export default function Index() {
     <div>
       <img
         alt={'header'}
-        className={'max-h-96 overflow-hidden w-full object-cover bg-cover bg-center'}
+        className={'h-96 overflow-hidden w-full object-cover bg-cover bg-center'}
         src={'/header.jpeg'}
       />
-      <div className={'px-4'}>
+      <div className={'relative h-[calc(100vh-440px)] px-4'}>
+        <div className={"z-[-1] h-full left-[0px] w-[100vw] absolute bg-[url('/background.jpeg')] object-contain bg-center opacity-20"} />
         <Timer/>
         <div>
           <div className={'mx-auto mt-4 text-xl w-96 text-blue-500 text-center'}>{i18n.ingress.anomaly.title}</div>
@@ -30,7 +30,7 @@ export default function Index() {
               <img alt={'telegram icon'} className={'rounded-full shadow-lg cursor-pointer m-auto h-[90px]'} src={'/telegram.jpeg'}/>
             </Link>
             <Link href={'https://instagram.com/2023ctrlsongpa'} target={'_blank'}>
-              <img alt={'instagram icon'} className={'cursor-pointer m-auto h-24'} src={'/instagram.jpeg'}/>
+              <img alt={'instagram icon'} className={'rounded-full cursor-pointer m-auto h-24'} src={'/instagram.jpeg'}/>
             </Link>
             <Link href={'https://cafe.naver.com/ingressresistance'} target={'_blank'}>
               <img alt={'navercafe icon'} className={'rounded-full shadow-lg cursor-pointer m-auto h-[90px]'} src={'/navercafe.webp'}/>
