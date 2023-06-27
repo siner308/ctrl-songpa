@@ -4,8 +4,7 @@ import useTranslation from '@/hooks/useTranslation';
 export default function Index() {
   const i18n = useTranslation();
   const telegramButtonClick = () => {
-    location.href = '#';
-    alert('준비중입니다. Not Ready Yet.')
+    location.href = 'https://t.me/+pvYWtu9KEJozNzc1';
   }
   return (
     <div>
