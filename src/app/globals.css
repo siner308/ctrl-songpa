@@ -17,3 +17,7 @@
 .btn-blue:hover {
   @apply bg-blue-700;
 }
+
+img {
+  pointer-events: none;
+}
