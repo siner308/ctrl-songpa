@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Props) {
         <meta property="og:description" content="19 August 2023 (Sat) Songpa, Seoul, South Korea"/>
         <meta property="og:url" content={`https://ctrl-songpa.vercel.app/${locale}`}/>
         <meta property="og:title" content="Ctrl Songpa"/>
-        <meta property="og:image" content="https://ctrl-songpa.vercel.app/logo.jpeg"/>
+        <meta property="og:image" content="https://ctrl-songpa.vercel.app/logo.png"/>
       </Head>
       <NavBar/>
       <div className={'flex-1'}>
