@@ -1,6 +1,6 @@
 import useTranslation from "@/hooks/useTranslation";
 import React, { useState } from "react";
-import NavBarButtonGroup from "@/components/NavBarButtonGroup";
+import NavBarButtonGroup from "@/components/RootLayout/Navbar/NavBarButtonGroup";
 import Image from "next/image";
 
 export default function NavBar() {

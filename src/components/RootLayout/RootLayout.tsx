@@ -1,6 +1,6 @@
-import '../app/globals.css';
-import NavBar from '@/components/NavBar';
-import Footer from '@/components/Footer';
+import '../../app/globals.css';
+import NavBar from '@/components/RootLayout/Navbar/NavBar';
+import Footer from '@/components/RootLayout/Footer';
 import Head from 'next/head';
 import useLocale from '@/hooks/useLocale';
 import { Noto_Sans_KR } from 'next/font/google';

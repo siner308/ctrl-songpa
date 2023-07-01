@@ -1,4 +1,4 @@
-import RootLayout from '@/components/RootLayout';
+import RootLayout from '@/components/RootLayout/RootLayout';
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
 

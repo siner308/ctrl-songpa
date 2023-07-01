@@ -21,7 +21,7 @@ export default function Timer() {
       <div>{day}</div>
       <div>{hour}</div>
       <div>{minute}</div>
-      <div>{second}.{microsecond}</div>
+      <div>{second}</div>
       <div className={'mobile:text-sm'}>{i18n.unit.day}</div>
       <div className={'mobile:text-sm'}>{i18n.unit.hour}</div>
       <div className={'mobile:text-sm'}>{i18n.unit.minute}</div>

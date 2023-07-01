@@ -1,5 +1,6 @@
 const translation = {
   en: {
+    sponsor: 'Sponsor',
     title: 'Ctrl Songpa - Resistance',
     language: 'English',
     ingress: {
@@ -23,6 +24,7 @@ const translation = {
     joinTelegram: 'Join Telegram',
   },
   kr: {
+    sponsor: '스폰서',
     title: '컨트롤 송파 - 레지스탕스',
     language: '한국어',
     ingress: {
