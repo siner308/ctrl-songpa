@@ -12,9 +12,9 @@ export default function SponsorGroup() {
   ].sort();
 
   return (
-    <div className="mt-16 px-60">
-      <div className={'text-center text-2xl mb-4'}>{i18n.sponsor}</div>
-      <div className={'flex justify-center gap-6'}>
+    <div className="mt-16 px-30">
+      <div className={'text-center text-2xl mobile:text-base mb-4'}>{i18n.sponsor}</div>
+      <div className={'flex justify-center gap-6 mobile:gap-2'}>
         {sponsors.map((sponsor) => {
           return <Sponsor key={sponsor} name={sponsor} />
         })}

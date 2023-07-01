@@ -5,6 +5,6 @@ type Props = {
 export default function Sponsor(props: Props) {
   const {name} = props;
   return (
-    <div className={"font-['CookieRun-Regular'] sponsor flex text-3xl mobile:text-2xl"}>{name}</div>
+    <div className={"font-['CookieRun-Regular'] sponsor flex text-xl mobile:text-sm"}>{name}</div>
   )
 }

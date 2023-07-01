@@ -31,7 +31,7 @@ img {
 
 .sponsor::after {
     content: ' | ';
-    @apply ml-6;
+    @apply ml-6 mobile:ml-2;
 }
 
 .sponsor:last-child::after {
