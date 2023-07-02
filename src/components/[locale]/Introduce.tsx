@@ -10,7 +10,7 @@ export default function Introduce() {
       <div className={"flex mx-auto text-xl"}>
         <u><b>{i18n.location.name}</b></u>
       </div>
-      <div className={"flex mx-auto text-2xl text-[#4ba5f5] mt-12"}>
+      <div className={"flex mx-auto text-xl mt-2"}>
         {i18n.location.shortName.toUpperCase()} WILL BE BLUE!
       </div>
     </div>
