@@ -4,6 +4,7 @@ import BackgroundImage from '@/components/[locale]/BackgroundImage';
 import Introduce from '@/components/[locale]/Introduce';
 import LinkGroup from '@/components/[locale]/LinkGroup';
 import SponsorGroup from '@/components/[locale]/SponsorGroup';
+import RSVP from '@/components/[locale]/RSVP';
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
         <BackgroundImage />
         <Timer />
         <Introduce />
+        <RSVP />
         <LinkGroup />
         <SponsorGroup />
       </div>

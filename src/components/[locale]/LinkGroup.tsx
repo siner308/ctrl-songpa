@@ -3,17 +3,17 @@ import Image from 'next/image';
 
 export default function LinkGroup() {
   return (
-    <div className={"mt-10 text-center flex justify-center"}>
+    <div className={"mt-2 text-center flex justify-center"}>
       <div className={"flex mt-10 gap-10"}>
         <Link href={"https://t.me/+pvYWtu9KEJozNzc1"} target={"_blank"}>
           <Image
             alt={"telegram icon"}
             className={
-              "rounded-full shadow-lg cursor-pointer m-auto h-[90px]"
+              "rounded-full shadow-lg cursor-pointer m-auto h-[60px]"
             }
             src={"/telegram.jpeg"}
-            width={90}
-            height={90}
+            width={60}
+            height={60}
           />
         </Link>
         <Link
@@ -22,10 +22,10 @@ export default function LinkGroup() {
         >
           <Image
             alt={"instagram icon"}
-            className={"rounded-full cursor-pointer m-auto h-24"}
+            className={"rounded-full cursor-pointer m-auto h-16"}
             src={"/instagram.jpeg"}
-            width={96}
-            height={96}
+            width={64}
+            height={64}
           />
         </Link>
         <Link
@@ -35,11 +35,11 @@ export default function LinkGroup() {
           <Image
             alt={"navercafe icon"}
             className={
-              "rounded-full shadow-lg cursor-pointer m-auto h-[90px]"
+              "rounded-full shadow-lg cursor-pointer m-auto h-[60px]"
             }
             src={"/navercafe.webp"}
-            width={90}
-            height={90}
+            width={60}
+            height={60}
           />
         </Link>
       </div>

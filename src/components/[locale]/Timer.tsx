@@ -17,7 +17,7 @@ export default function Timer() {
   const second = Math.floor((remainTime % (1000 * 60)) / 1000);
   const microsecond = Math.floor((remainTime % 1000) / 10);
   return (
-    <div className={'m-auto max-w-xl grid grid-cols-4 text-center text-2xl p-10'}>
+    <div className={'m-auto max-w-xl grid grid-cols-4 text-center text-2xl px-10 py-6'}>
       <div>{day}</div>
       <div>{hour}</div>
       <div>{minute}</div>
