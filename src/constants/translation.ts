@@ -1,7 +1,7 @@
 const translation = {
   en: {
-    comingSoon: 'Coming Soon',
-    rsvp: 'Register',
+    comingSoon: 'coming soon(tm)',
+    rsvp: 'Faction registration',
     sponsor: 'Sponsor',
     title: 'Ctrl Songpa - Resistance',
     language: 'English',
@@ -27,7 +27,7 @@ const translation = {
   },
   kr: {
     comingSoon: '준비중입니다.',
-    rsvp: '등록',
+    rsvp: '진영 등록',
     sponsor: '스폰서',
     title: '컨트롤 송파 - 레지스탕스',
     language: '한국어',
